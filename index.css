@@ -1,13 +1,15 @@
 body {
+  color: #34495e;
   background-color: #ecf0f1;
+  position: absolute;
+}
+
+.box {
+  text-align: center;
 }
 
 .btn {
   cursor: pointer;
-}
-
-body {
-  color: #34495e;
 }
 
 .clicked {
@@ -21,4 +23,36 @@ body {
 
 .showing {
   display: block;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+ul {
+  font-size: 20px;
+  list-style: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn .5s linear;
 }
